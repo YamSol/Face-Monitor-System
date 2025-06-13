@@ -1,4 +1,4 @@
-# Face Monitor System
+# Face Monitor System (Alpha)
 
 Sistema de monitoramento de presença com reconhecimento facial para bloqueio automático de tela em ambientes Windows.
 
