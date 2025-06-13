@@ -46,16 +46,17 @@ O Face Monitor System é uma solução de segurança que utiliza reconhecimento 
 
 ### Instalação Automática
 
-1. Faça o download de todos os arquivos do projeto
-2. Execute o arquivo `setup.bat` como administrador
-3. O script instalará automaticamente todas as dependências
-4. Configure o sistema para inicialização automática
+1. Faça o download do projeto.
+2. Desempacote o arquivo compactado.
+3. Execute o arquivo `setup.bat` como administrador.
+4. O script instalará automaticamente todas as dependências
+5. Configure o sistema para inicialização automática
 
 ### Instalação Manual
 
 1. Clone ou faça download do repositório
 ```
-git clone <repository-url>
+git clone https://github.com/YamSol/Face-Monitor-System.git
 cd face-monitor-system
 ```
 
