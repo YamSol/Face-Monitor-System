@@ -12,6 +12,7 @@ import logging
 from datetime import datetime, timedelta
 import sys
 import os
+from dotenv import load_dotenv
 
 # Configuração de logging
 logging.basicConfig(
@@ -25,13 +26,14 @@ logging.basicConfig(
 
 class FaceMonitorSystem:
     def __init__(self):
+        load_dotenv()
         self.face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
         self.camera = None
         self.is_running = False
         self.user_present = False
         self.last_detection_time = None
         self.initialization_timeout = 60  # 1 minuto para inicialização
-        self.absence_timeout = 10  # 1 minuto de ausência antes de bloquear
+        self.absence_timeout = int(os.getenv('ABSENCE_TIMEOUT', 60))  # Tempo de ausência antes de bloquear
         self.monitoring_thread = None
         self.screen_locked = False
         
