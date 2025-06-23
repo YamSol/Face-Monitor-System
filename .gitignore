@@ -1,1 +1,4 @@
 /face_monitor.log
+
+# ignore environment files
+.env
